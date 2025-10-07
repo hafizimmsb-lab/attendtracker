@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScanTrack Attendance</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ScanTrack Attendance</h1>
+
+    <section class="header-inputs">
+      <input type="text" placeholder="Subject" id="subject" />
+      <input type="text" placeholder="Site" id="site" />
+      <input type="text" placeholder="Room" id="room" />
+      <input type="date" id="date" />
+    </section>
+
+    <section class="controls">
+      <button id="startScan">Start Scan</button>
+      <button id="undo">Undo</button>
+      <button id="manualInput">Manual Input</button>
+      <button id="export">Export to Excel</button>
+      <button id="refresh">Refresh</button>
+      <button id="print">Print Template</button>
+    </section>
+
+    <section class="attendance-table">
+      <table>
+        <thead>
+          <tr>
+            <th>HID</th>
+            <th>Employee ID</th>
+            <th>Full Name</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceBody">
+          <!-- Scanned entries will appear here -->
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

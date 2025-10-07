@@ -1,0 +1,9 @@
+{
+  "name": "ScanTrack Attendance",
+  "short_name": "ScanTrack",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "description": "Attendance tracking app using HID badge scanning",
+  "icons": []
+}
